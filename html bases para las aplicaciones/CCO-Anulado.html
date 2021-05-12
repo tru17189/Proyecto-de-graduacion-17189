@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+	<head>
+      <style>
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+        th, td {
+          padding: 15px;
+          text-align: left;
+        }
+        #t01 {
+          width: 100%;    
+          font-family: calibri;
+          background-color: white;
+          font-size:80%
+        }
+        #t02 {
+          width: 100%;    
+          font-family: calibri;
+          background-color: white;
+          font-size:80%
+        }
+        #t03 {
+          width: 60%;    
+          font-family: calibri;
+          background-color: #305496;
+          color: White;
+          font-size:80%
+        }
+        
+        .square {
+          position: relative;
+          height: 30px;
+          width: 99.5%;
+          left: 0%;
+          top: 0px;
+          font-family: calibri;
+          font-size: 115%;
+          background-color: #305496;
+          text-align:center;
+          border-style: solid;
+          border-color: Black;
+          color: White;
+        }
+
+        .warning {
+          background-color: #EDEDED;
+          border-left: 6px solid #a8a8a8;
+          width: 100%;    
+          height: 110px;
+          font-family: calibri;
+        }
+
+        .content {
+          position: absolute;
+          bottom: 0;
+          background: rgb(255, 0, 0); 
+          background: rgb(255, 0, 0); 
+          color: #f1f1f1;
+          width: 100%;
+          padding: 50px;
+        }
+      </style>
+    </head>
+    <body>
+    	<table id='t01'>
+        	<tr>
+              <th>ORDEN DE SERVICIO<input type='image' src="& JSON(MainLogo.Image, JSONFormat.IncludeBinaryData) &" alt='Submit' width='160px' height='60px'></th>
+              <th style='vertical-align: super;'>Nombre y Firma del Jefe/Supervisor  LAATS que Autoriza</th> 
+              <th><strong  style='position:relative;top:-20px;left:30px'>CORRELATIVO</strong><strong  style='position:relative;top:0px;left:-20px;color:red;'>CCO</strong><strong style='position:relative;top:15px;left:-37px;color:red'>0</strong></th>
+            </tr>
+        </table>
+		<table id='t02'>    
+            <tr>
+              <td>No. VUELO</td>
+              <td>TIPO AERONAVE</td>
+              <td>MATRICULA</td>
+              <td>CLIENTE</td>
+              <td>FECHA</td>
+            </tr>
+			<tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+        </table>
+		<table id='t01'>
+      <div class='content'>
+        <h1>ANULADO</h1>
+        <p>Numero de orden: 0</p>
+      </div>
+        	<tr id='t03'>
+              <td>CODIGO</td>
+              <td>SERVICIO</td>
+              <td>SERVICIO BRINDADO</td>
+              <td>CANTIDAD</td>
+              <td>HORA INICIO</td>
+              <td>HORA FINAL</td>
+              <td>NUMERO DE DOCUMENTO</td>
+            </tr>
+            <tr style='background-color: #B4C6E7;'>
+              <td>158</td>
+              <td><input type='checkbox' ></td>
+              <td ></td>
+              <td>SERVICIO W&B RECEPCION</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>093</td>
+              <td><input type='checkbox' ></td>
+              <td ></td>
+              <td>SERVICIO W&B DESPACHO</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr style='background-color: #B4C6E7;'>
+              <td>157</td>
+              <td><input type='checkbox' ></td>
+              <td ></td>
+              <td>SERVICIO W&B TRANSITO</td>
+              <td></td>
+              <td></td>
+              <td></td>        
+            </tr>
+            <tr>
+              <td>159</td>
+              <td><input type='checkbox' ></td>
+              <td ></td>
+              <td>SERVICIO DE OPERACIONES RECEPCION</td>
+              <td></td>
+              <td></td>
+              <td></td>      
+            </tr>
+            <tr style='background-color: #B4C6E7;'>
+              <td>160</td>
+              <td><input type='checkbox' ></td>
+              <td ></td>
+              <td>SERVICIO DE OPERACIONES DESPACHO</td>
+              <td></td>
+              <td></td>
+              <td></td>        
+            </tr>
+            <tr>
+              <td>094</td>
+              <td><input type='checkbox' ></td>
+              <td ></td>
+              <td>SERVICIO DE OPERACIONES TRANSITO</td>
+              <td></td>
+              <td></td>
+              <td></td>             
+            </tr>
+            <tr style='background-color: #B4C6E7;'>
+              <td>095</td>
+              <td><input type='checkbox' ></td>
+              <td ></td>
+              <td>TRASLADO DE TRIPULACION / AERONAVE - TERMINAL &#8592;&#8594; TERMINAL - AERONAVE</td>
+              <td style='background-color: #7C9CD6;'></td>
+              <td style='background-color: #7C9CD6;'></td>
+              <td></td>       
+            </tr>
+            <tr>
+              <td>096</td>
+              <td><input type='checkbox' ></td>
+              <td ></td>
+              <td>TRASLADO DE TRIPULACION / HOTEL - TERMINAL &#8592;&#8594; TERMINAL - HOTEL</td>
+              <td style='background-color: #7C9CD6;'></td>
+              <td style='background-color: #7C9CD6;'></td>
+              <td></td>     
+            </tr>
+            <tr style='background-color: #B4C6E7;'>
+              <td>086</td>
+              <td><input type='checkbox' ></td>
+              <td ></td>
+              <td>CATERING</td>
+              <td style='background-color: #7C9CD6;'></td>
+              <td style='background-color: #7C9CD6;'></td>
+              <td></td>            
+            </tr>
+            <tr>
+              <td>087</td>
+              <td><input type='checkbox' ></td>
+              <td ></td>
+              <td>PAGO A OIRSA</td>
+              <td style='background-color: #7C9CD6;'></td>
+              <td style='background-color: #7C9CD6;'></td>
+              <td></td> 
+            </tr>
+            <tr style='background-color: #B4C6E7;'>
+              <td>088</td>
+              <td><input type='checkbox' ></td>
+              <td ></td>
+              <td>PAGO A SEPA</td>
+              <td style='background-color: #7C9CD6;'></td>
+              <td style='background-color: #7C9CD6;'></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>089</td>
+              <td><input type='checkbox' ></td>
+              <td ></td>
+              <td>PAGO DE DERECHOS DE APROXIMACIÓN Y ATERRIZAJE</td>
+              <td style='background-color: #7C9CD6;'></td>
+              <td style='background-color: #7C9CD6;'></td>
+              <td></td>
+            </tr>
+            <tr style='background-color: #B4C6E7;'>
+              <td>090</td>
+              <td><input type='checkbox' ></td>
+              <td ></td>
+              <td>PAGO DE PARQUEO POR PERNOCTA</td>
+              <td style='background-color: #7C9CD6;'></td>
+              <td style='background-color: #7C9CD6;'></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>091</td>
+              <td><input type='checkbox' ></td>
+              <td ></td>
+              <td>PAGO DE PARQUEO POR PERNOCTA</td>
+              <td style='background-color: #7C9CD6;'></td>
+              <td style='background-color: #7C9CD6;'></td>
+              <td></td>
+            </tr>
+            <tr style='background-color: #B4C6E7;'>
+              <td>092</td>
+              <td><input type='checkbox' ></td>
+              <td ></td>
+              <td>SERVICIO DE COMBUSTIBLE US GL</td>
+              <td style='background-color: #7C9CD6;'></td>
+              <td style='background-color: #7C9CD6;'></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>156</td>
+              <td><input type='checkbox' ></td>
+              <td ></td>
+              <td>PAGO DE DESECHOS INTERNACIONALES</td>
+              <td style='background-color: #7C9CD6;'></td>
+              <td style='background-color: #7C9CD6;'></td>
+              <td></td>
+            </tr>
+            <tr style='background-color: #B4C6E7;'>
+                <td></td>
+                <td><input type='checkbox' ></td>
+                <td></td>
+                <td>otro: </td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><input type='checkbox' ></td>
+                <td></td>
+                <td>otro: </td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr style='background-color: #B4C6E7;'>
+                <td></td>
+                <td><input type='checkbox' ></td>
+                <td></td>
+                <td>otro: </td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><input type='checkbox' ></td>
+                <td></td>
+                <td>otro: </td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+        </table> 
+        <div class='square'><strong>INFORMACION SOBRE DEMORAS Y CANCELACIONES DE VUELO</strong></div>
+        <table id='t01'>
+            <tr>
+                <td style='width: 25%;'>ITINERARIO DE ARRIBO DEL VUELO</td>
+                <td></td>
+                <td style='width: 25%;'>ITINERARIO DE SALIDA DEL VUELO</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td style='width: 25%;'>HORA REAL DE ARRIBO DEL VUELO</td>
+                <td></td>
+                <td style='width: 25%;'>HORA REAL DE SALIDA DEL VUELO</td>
+                <td></td>
+            </tr>
+        </table>
+        <table id='t01'>
+            <tr>
+                <td style='width: 25%;'>HORA REAL DE ARRIBO DEL VUELO</td>
+                <td><strong>SI</strong></td>
+                <td><strong>NO</strong></td>
+                <td style='width: 25%;'>HORA REAL DE SALIDA DEL VUELO</td>
+                <td></td>
+            </tr>
+        </table>
+        <div class='warning'><p><strong>OBSERVACIONES: </strong></p></div>
+	</body>
